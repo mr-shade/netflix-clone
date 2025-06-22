@@ -6,6 +6,27 @@ A comprehensive Netflix clone built with React, TypeScript, and TailwindCSS feat
 
 Experience the Netflix Clone in action!
 
+> **Note**: After setting up the repository on GitHub, the live demo will be available at: `https://yourusername.github.io/netflix-clone/`
+
+## 🚀 Deployment
+
+This project includes automated GitHub Pages deployment using GitHub Actions.
+
+### Setup GitHub Pages Deployment
+
+1. **Push to GitHub**: Push your code to a GitHub repository
+2. **Enable GitHub Pages**: 
+   - Go to your repository settings
+   - Navigate to "Pages" in the left sidebar
+   - Under "Source", select "GitHub Actions"
+3. **Automatic Deployment**: The app will automatically deploy when you push to the main branch
+
+The deployment workflow:
+- ✅ Runs on every push to `main` branch
+- ✅ Uses pnpm for fast, efficient builds
+- ✅ Automatically optimizes for production
+- ✅ Deploys to GitHub Pages with proper routing
+
 ## ✨ Features
 
 ### 🎬 Core Netflix Experience
@@ -120,6 +141,13 @@ pnpm dev
 pnpm build
 # Output in /dist directory
 ```
+
+### GitHub Pages Deployment
+The project includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically:
+- Installs dependencies using pnpm
+- Builds the project for production
+- Deploys to GitHub Pages
+- Configures proper base path for GitHub Pages routing
 
 ## 📁 Project Structure
 
