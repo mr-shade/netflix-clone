@@ -4,7 +4,7 @@ A comprehensive Netflix clone built with React, TypeScript, and TailwindCSS feat
 
 ## 🚀 Live Demo
 
-**[View Live Site](https://t5cs4g4t83.space.minimax.io)**
+Experience the Netflix Clone in action!
 
 ## ✨ Features
 
@@ -96,8 +96,7 @@ The application is fully responsive and optimized for:
 
 ### Installation
 ```bash
-# Clone the repository
-git clone <repository-url>
+# Navigate to the project directory
 cd netflix-clone
 
 # Install dependencies
