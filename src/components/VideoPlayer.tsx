@@ -127,6 +127,9 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
         muted={isMuted}
         loop
         className="w-full h-full object-cover"
+        style={{ 
+          objectPosition: '50% 20%' // Crop top part of video for Netflix authenticity
+        }}
         onError={(e) => {
           console.log('Video error:', e);
           // Fallback to a working video URL

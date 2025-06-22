@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Search, Bell, ChevronDown, Menu, Gift, User } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -12,9 +13,9 @@ const NetflixHeader: React.FC<NetflixHeaderProps> = ({ onSearch }) => {
   const [showSearch, setShowSearch] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [showProfileMenu, setShowProfileMenu] = useState(false);
-  const [activeNavItem, setActiveNavItem] = useState('Home');
   const searchInputRef = useRef<HTMLInputElement>(null);
   const profileMenuRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,29 +68,39 @@ const NetflixHeader: React.FC<NetflixHeaderProps> = ({ onSearch }) => {
       <div className="flex items-center justify-between px-4 md:px-8 lg:px-16 py-4">
         {/* Logo */}
         <div className="flex items-center space-x-8">
-          <div className="netflix-red text-2xl md:text-3xl font-bold tracking-wide hover:scale-105 transition-transform duration-300 cursor-pointer">
+          <Link to="/" className="netflix-red text-2xl md:text-3xl font-bold tracking-wide hover:scale-105 transition-transform duration-300">
             NETFLIX
-          </div>
+          </Link>
           
           {/* Enhanced Navigation */}
           <nav className="hidden lg:flex space-x-6 xl:space-x-8">
-            {navItems.map((item) => (
-              <button
-                key={item}
-                onClick={() => setActiveNavItem(item)}
-                className={`relative text-sm font-medium transition-colors duration-300 group ${
-                  activeNavItem === item ? 'text-white' : 'text-gray-300 hover:text-white'
-                }`}
-              >
-                {item}
-                {activeNavItem === item && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-netflix-red transform scale-x-100 transition-transform duration-300" />
-                )}
-                {activeNavItem !== item && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-netflix-red transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-                )}
-              </button>
-            ))}
+            {navItems.map((item) => {
+              const path = item === 'Home' ? '/' : 
+                         item === 'TV Shows' ? '/tv-shows' :
+                         item === 'Movies' ? '/movies' :
+                         item === 'New & Popular' ? '/new-popular' :
+                         item === 'My List' ? '/my-list' :
+                         item === 'Browse by Languages' ? '/browse-languages' : '/';
+              const isActive = location.pathname === path;
+              
+              return (
+                <Link
+                  key={item}
+                  to={path}
+                  className={`relative text-sm font-medium transition-colors duration-300 group ${
+                    isActive ? 'text-white' : 'text-gray-300 hover:text-white'
+                  }`}
+                >
+                  {item}
+                  {isActive && (
+                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-netflix-red transform scale-x-100 transition-transform duration-300" />
+                  )}
+                  {!isActive && (
+                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-netflix-red transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                  )}
+                </Link>
+              );
+            })}
           </nav>
         </div>
 
