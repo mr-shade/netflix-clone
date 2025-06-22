@@ -1,0 +1,204 @@
+{
+  "featured": {
+    "id": "featured-1",
+    "title": "Stranger Things",
+    "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+    "year": "2016",
+    "genre": "Sci-Fi Horror",
+    "rating": "TV-14",
+    "duration": "51m",
+    "thumbnail": "/images/featured/stranger-things.jpg",
+    "videoUrl": "/videos/stranger-things-trailer.mp4",
+    "logo": "/images/logos/stranger-things-logo.png"
+  },
+  "categories": {
+    "trending": [
+      {
+        "id": "trending-1",
+        "title": "The Crown",
+        "thumbnail": "/images/trending/the-crown.jpg",
+        "videoUrl": "/videos/the-crown-trailer.mp4",
+        "year": "2016",
+        "genre": "Biography Drama",
+        "rating": "TV-MA"
+      },
+      {
+        "id": "trending-2", 
+        "title": "Squid Game",
+        "thumbnail": "/images/trending/squid-game.jpg",
+        "videoUrl": "/videos/squid-game-trailer.mp4",
+        "year": "2021",
+        "genre": "Thriller",
+        "rating": "TV-MA"
+      },
+      {
+        "id": "trending-3",
+        "title": "Wednesday",
+        "thumbnail": "/images/trending/wednesday.jpg",
+        "videoUrl": "/videos/wednesday-trailer.mp4",
+        "year": "2022",
+        "genre": "Comedy Horror",
+        "rating": "TV-14"
+      },
+      {
+        "id": "trending-4",
+        "title": "The Witcher",
+        "thumbnail": "/images/trending/the-witcher.jpg",
+        "videoUrl": "/videos/the-witcher-trailer.mp4",
+        "year": "2019",
+        "genre": "Fantasy",
+        "rating": "TV-MA"
+      },
+      {
+        "id": "trending-5",
+        "title": "Ozark",
+        "thumbnail": "/images/trending/ozark.jpg",
+        "videoUrl": "/videos/ozark-trailer.mp4",
+        "year": "2017",
+        "genre": "Crime Drama",
+        "rating": "TV-MA"
+      }
+    ],
+    "popular": [
+      {
+        "id": "popular-1",
+        "title": "Breaking Bad",
+        "thumbnail": "/images/popular/breaking-bad.jpg",
+        "videoUrl": "/videos/breaking-bad-trailer.mp4",
+        "year": "2008",
+        "genre": "Crime Drama",
+        "rating": "TV-MA"
+      },
+      {
+        "id": "popular-2",
+        "title": "The Office",
+        "thumbnail": "/images/popular/the-office.jpg", 
+        "videoUrl": "/videos/the-office-trailer.mp4",
+        "year": "2005",
+        "genre": "Comedy",
+        "rating": "TV-14"
+      },
+      {
+        "id": "popular-3",
+        "title": "Money Heist",
+        "thumbnail": "/images/popular/money-heist.jpg",
+        "videoUrl": "/videos/money-heist-trailer.mp4",
+        "year": "2017",
+        "genre": "Crime Thriller",
+        "rating": "TV-MA"
+      },
+      {
+        "id": "popular-4",
+        "title": "Dark",
+        "thumbnail": "/images/popular/dark.jpg",
+        "videoUrl": "/videos/dark-trailer.mp4",
+        "year": "2017",
+        "genre": "Sci-Fi Mystery",
+        "rating": "TV-MA"
+      },
+      {
+        "id": "popular-5",
+        "title": "Narcos",
+        "thumbnail": "/images/popular/narcos.jpg",
+        "videoUrl": "/videos/narcos-trailer.mp4",
+        "year": "2015",
+        "genre": "Crime Biography",
+        "rating": "TV-MA"
+      }
+    ],
+    "originals": [
+      {
+        "id": "originals-1",
+        "title": "House of Cards",
+        "thumbnail": "/images/originals/house-of-cards.jpg",
+        "videoUrl": "/videos/house-of-cards-trailer.mp4",
+        "year": "2013",
+        "genre": "Political Drama",
+        "rating": "TV-MA"
+      },
+      {
+        "id": "originals-2",
+        "title": "Orange Is the New Black",
+        "thumbnail": "/images/originals/orange-is-the-new-black.jpg",
+        "videoUrl": "/videos/orange-is-the-new-black-trailer.mp4",
+        "year": "2013",
+        "genre": "Comedy Drama",
+        "rating": "TV-MA"
+      },
+      {
+        "id": "originals-3",
+        "title": "Mindhunter",
+        "thumbnail": "/images/originals/mindhunter.jpg",
+        "videoUrl": "/videos/mindhunter-trailer.mp4",
+        "year": "2017",
+        "genre": "Crime Drama",
+        "rating": "TV-MA"
+      },
+      {
+        "id": "originals-4",
+        "title": "The Umbrella Academy",
+        "thumbnail": "/images/originals/umbrella-academy.jpg",
+        "videoUrl": "/videos/umbrella-academy-trailer.mp4",
+        "year": "2019",
+        "genre": "Sci-Fi Action",
+        "rating": "TV-14"
+      },
+      {
+        "id": "originals-5",
+        "title": "Bridgerton",
+        "thumbnail": "/images/originals/bridgerton.jpg",
+        "videoUrl": "/videos/bridgerton-trailer.mp4",
+        "year": "2020",
+        "genre": "Period Romance",
+        "rating": "TV-MA"
+      }
+    ],
+    "action": [
+      {
+        "id": "action-1",
+        "title": "Extraction",
+        "thumbnail": "/images/action/extraction.jpg",
+        "videoUrl": "/videos/extraction-trailer.mp4",
+        "year": "2020",
+        "genre": "Action Thriller",
+        "rating": "R"
+      },
+      {
+        "id": "action-2",
+        "title": "6 Underground",
+        "thumbnail": "/images/action/6-underground.jpg",
+        "videoUrl": "/videos/6-underground-trailer.mp4",
+        "year": "2019",
+        "genre": "Action",
+        "rating": "R"
+      },
+      {
+        "id": "action-3",
+        "title": "The Old Guard",
+        "thumbnail": "/images/action/the-old-guard.jpg",
+        "videoUrl": "/videos/the-old-guard-trailer.mp4",
+        "year": "2020",
+        "genre": "Action Fantasy",
+        "rating": "R"
+      },
+      {
+        "id": "action-4",
+        "title": "Triple Frontier",
+        "thumbnail": "/images/action/triple-frontier.jpg",
+        "videoUrl": "/videos/triple-frontier-trailer.mp4",
+        "year": "2019",
+        "genre": "Action Thriller",
+        "rating": "R"
+      },
+      {
+        "id": "action-5",
+        "title": "The Gray Man",
+        "thumbnail": "/images/action/the-gray-man.jpg",
+        "videoUrl": "/videos/the-gray-man-trailer.mp4",
+        "year": "2022",
+        "genre": "Action Thriller",
+        "rating": "PG-13"
+      }
+    ]
+  }
+}

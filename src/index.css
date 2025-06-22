@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Netflix Color Variables */
+    --netflix-red: #E50914;
+    --netflix-black: #141414;
+    --netflix-dark: #000000;
+    --netflix-gray: #333333;
+    --netflix-light-gray: #b3b3b3;
+  }
+
+  .dark {
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-black text-white font-sans;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .netflix-red {
+    color: #E50914;
+  }
+  
+  .bg-netflix-red {
+    background-color: #E50914;
+  }
+  
+  .bg-netflix-black {
+    background-color: #141414;
+  }
+  
+  .bg-netflix-dark {
+    background-color: #000000;
+  }
+  
+  .bg-netflix-gray {
+    background-color: #333333;
+  }
+  
+  .text-netflix-gray {
+    color: #b3b3b3;
+  }
+  
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .gradient-overlay {
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.7) 100%);
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(90deg, 
+      rgba(0,0,0,1) 0%, 
+      rgba(0,0,0,0.7) 30%, 
+      rgba(0,0,0,0.3) 70%, 
+      transparent 100%);
+  }
+}
+
+img {
+  object-position: top;
+}
