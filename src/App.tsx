@@ -4,6 +4,7 @@ import NetflixHeader from './components/NetflixHeader';
 import HeroSection from './components/HeroSection';
 import ContentRow from './components/ContentRow';
 import MovieModal from './components/MovieModal';
+import NetflixFooter from './components/NetflixFooter';
 
 interface Movie {
   id: string;
@@ -201,6 +202,7 @@ function App() {
                 movies={netflixData.categories.trending}
                 onPlayMovie={handlePlayMovie}
                 onMovieInfo={handleMovieInfo}
+                priority={true}
               />
 
               <ContentRow
@@ -227,6 +229,9 @@ function App() {
           </>
         )}
       </main>
+
+      {/* Footer */}
+      <NetflixFooter />
 
       {/* Movie Modal */}
       <MovieModal
